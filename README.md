@@ -33,10 +33,4 @@ To run the client code, follow these steps:
 4. Enter your username and password when prompted.
 5. Start chatting with other users in the chat room!
    
-## 3. Layered Architecture <a name="Layered-Architecture"></a>
-![image](https://github.com/mohameddmahmoudd/Vehicle-Control-System/assets/52659572/5ee5af2a-0fe5-4222-ae07-aca344d18887)
-
-## 4.Team Members <a name="Team-Members"></a>
-![image](https://github.com/mohameddmahmoudd/Vehicle-Control-System/assets/52659572/0425376f-92c2-487d-b221-fd2c9848f0c1)
-
 ## For project test video please [click here](https://drive.google.com/drive/folders/1AvibxVLVzU1bgRRx8kk3Im4t_W2tMGO6) 
