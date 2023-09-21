@@ -37,37 +37,18 @@ Chat Server accepts the clients' connection requests after authenticating
 
 - When the speed limit is enabled, ECU 1 initiates communication with ECU 2 to retrieve the speed limit value from EEPROM.
 
-## 2. ECU 2 <a name="ECU-2"></a>
+## 2. Clients <a name="Clients"></a>
 
-Electronic Control Unit 2, or ECU 2, complements the functionality of ECU 1 and manages specific tasks related to speed limit control and communication. Here's an overview of its interfaces and functions:
+The client code allows users to connect to the chat room server and send/receive messages. It is implemented in Python and uses the Tkinter library for the graphical user interface.
 
-### EEPROM (I2C) Interface <a name="eeprom-i2c-interface"></a>
+To run the client code, follow these steps:
 
-- **Speed Limit Management:** ECU 2 uses the I2C protocol to interact with the EEPROM, which stores speed limit information.
-  - It can read and write data to/from the EEPROM.
-
-### SPI Communication <a name="spi-communication"></a>
-
-- **Speed Limit Management:** The communication between ECU 1 and ECU 2 is established using SPI.
-  - ECU 1 serves as the master, and ECU 2 acts as the slave.
-  - When the driver selects "Enable Speed Limit" on ECU 1, it sends a request to ECU 2 via SPI.
-  - ECU 2 reads the speed limit value from the EEPROM.
-  - ECU 2 then sends the speed limit value to ECU 1 via SPI, confirming the activation of the speed limit feature.
-  - ECU 1 enforces the speed limit in "D" mode based on the received value. It compares the current speed with the limit and adjusts vehicle performance accordingly to stay within the limit.
-
-### Gear Control <a name="gear-control"></a>
-
-- The keypad on ECU 1 allows the driver to select different gears (P, R, N, D).
-- ECU 1 updates the LCD display to reflect the chosen gear, ensuring clear communication to the driver.
-
-### Speed Control <a name="speed-control"></a>
-
-- ECU 1 monitors the potentiometer for speed adjustment.
-
-### Safety Measures <a name="safety-measures"></a>
-
-- In "R" (Reverse) mode, ECU 1 enforces a maximum speed of 30 KM/H, regardless of the speed limit setting, to ensure safety during backward movement.
-
+1. Open a terminal or command prompt.
+2. Navigate to the directory containing the client code.
+3. Run the following command: `python client.py`
+4. Enter your username and password when prompted.
+5. Start chatting with other users in the chat room!
+   
 ## 3. Layered Architecture <a name="Layered-Architecture"></a>
 ![image](https://github.com/mohameddmahmoudd/Vehicle-Control-System/assets/52659572/5ee5af2a-0fe5-4222-ae07-aca344d18887)
 
