@@ -29,7 +29,7 @@ To run the client code, follow these steps:
 
 1. Open a terminal or command prompt.
 2. Navigate to the directory containing the client code.
-3. Run the following command: `python client.py`
+3. Run the following command: `python FirstClient.py`
 4. Enter your username and password when prompted.
 5. Start chatting with other users in the chat room!
    
