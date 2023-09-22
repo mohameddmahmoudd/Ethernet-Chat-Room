@@ -6,7 +6,7 @@ import tkinter as tk
 username = input("Enter username: ")
 password = input("Enter password: ")
 
-while (username != "Masoud" or password != "12345678") and (username != "Helmy" or password != "87654321") and (username != "Hazem" or password != "1234567890"):
+while (username != "FirstClient" or password != "12345678") and (username != "SecondClient" or password != "87654321") and (username != "ThirdClient" or password != "1234567890"):
     print("Incorrect credentials, please try again")
     username = input("Enter username: ")
     password = input("Enter password: ")
